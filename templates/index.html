@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="myCanvas" width="200" height="100"
+     style="border:1px solid #000000;">
+    <h1>Page Content</h1>
+
+
+    <div class="carousel">
+        <a class="carousel-item " href="#one!"><img src="/static/images/r1.jpeg"></a>
+        <a class="carousel-item " href="#two!"><img src="/static/images/ducati.jpg"></a>
+        <a class="carousel-item " href="#three!"><img src="/static/images/stunt.jpg"></a>
+        <a class="carousel-item " href="#four!"><img src="/static/images/suk.jpg"></a>
+        <a class="carousel-item " href="#five!"><img src="/static/images/bmw.jpg"></a>
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+
+
+    </script>
+
+</div>
+
+
+
+
+{% endblock %}}

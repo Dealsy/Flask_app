@@ -1,0 +1,14 @@
+<!doctype html>
+<title>My Application</title>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+        <div style="border: solid lightblue; height: 100px; width: 300px; background-color: lightcoral; margin: auto; padding: 10px;">
+            <h1>{{ message }}</h1>
+            </div>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
