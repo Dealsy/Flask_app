@@ -1,15 +1,16 @@
-
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <link rel="stylesheet" href="/static/css/style.css" type="text/css">
 <!-- Compiled and minified JavaScript -->
 <script src="/static/js/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<nav>
 
+<!-- below is the code for the nav bar -->
+<nav>
     <div style="background-color: #ECF0F1; color: dimgray" class="nav-wrapper ">
         <a href="/" class="brand-logo"> My First Web Application!</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a style="color: dimgray " href="/">Home</a></li>
             <li><a style="color: dimgray " href="{{ url_for('lessons') }}">Lessons</a></li>
             <li><a style="color: dimgray " href="badges.html">About</a></li>
             <li><a href="{{ url_for('logout') }}"> <input type="submit" value=Logout class="logout_button"> </a></li>
@@ -19,14 +20,19 @@
     </div>
 </nav>
 
-{% block content %}
+<!-- This code creates the canvas for your content to go in. -->
+<div class="myCanvas"
+     style="border:1px solid #000000;">
+    {% block content %}
 
 
 
 
-{% endblock %}
+    {% endblock %}
 
+</div>
 
+<!--This is the code that creates the footer for your layout -->
 <footer class="page-footer">
     <div class="container">
         <div class="row">

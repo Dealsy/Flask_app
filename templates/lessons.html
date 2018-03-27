@@ -1,83 +1,84 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="myCanvas"
-         style="border:1px solid #000000;">
 
 
-        <div class="container">
+
+        <div class="container lesson_border">
+            <div class="row">
+                <div class="s6">
 
 
-            <ul id="tabs-swipe-demo" class="tabs">
-                <li class="tab col s3"><a href="#test-swipe-1">HTML</a></li>
-                <li class="tab col s3"><a class="active" href="#test-swipe-2">CSS</a></li>
-                <li class="tab col s3"><a href="#test-swipe-3">Javascript</a></li>
-                <li class="tab col s3"><a href="#test-swipe-4">Python</a></li>
-                <li class="tab col s3"><a href="#test-swipe-5">Flask</a></li>
-            </ul>
-            <div id="test-swipe-1" class="col s6">
-                <ul class="browser-default">
-                    <li><a href="https://www.tutorialspoint.com/html/index.htm"> HTML Tutorial</a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                </ul>
+                    <ul id="tabs-swipe-demo" class="tabs">
+                        <li class="tab col s2"><a class="active" href="#test-swipe-1">HTML</a></li>
+                        <li class="tab col s2"><a href="#test-swipe-2">CSS</a></li>
+                        <li class="tab col s3"><a href="#test-swipe-3">Javascript</a></li>
+                        <li class="tab col s2"><a href="#test-swipe-4">Python</a></li>
+                        <li class="tab col s2"><a href="#test-swipe-5">Flask</a></li>
+                    </ul>
+                    <div id="test-swipe-1" class="col s6">
 
+                        <ul class="collection">
+                            <li class="collection-item"><a href="https://www.tutorialspoint.com/html/index.htm"> HTML Tutorial</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/html/html_elements.asp">HTML Elements</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/html/html_formatting.asp">HTML Text Formatting</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div id="test-swipe-2" class="col s6">
+
+
+                        <ul class="collection">
+                            <li class="collection-item"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS">Introduction to CSS</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/css/css_padding.asp">CSS Syntax and Selectors</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/css/css_howto.asp">Three Ways to Insert CSS</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/css/css_padding.asp">CSS Padding</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div id="test-swipe-3" class="col s6">
+
+
+                        <ul class="collection">
+                            <li class="collection-item"><a href="https://javascript.info/">The Modern JavaScript Tutorial</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/js/js_output.asp">JavaScript Output</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/js/js_statements.asp">JavaScript Statements</a></li>
+                            <li class="collection-item"><a href="https://www.w3schools.com/js/js_variables.asp">JavaScript Variables</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div id="test-swipe-4" class="col s6">
+
+
+                        <ul class="collection">
+                            <li class="collection-item"><a href="https://www.learnpython.org/">learnpython.org</a></li>
+                            <li class="collection-item"><a href="http://www.techbeamers.com/python-keywords-identifiers-variables/">Python Keywords, Identifiers And Variables – Fundamentals</a></li>
+                            <li class="collection-item"><a href="http://www.techbeamers.com/understand-python-statement-indentation/">Understand Python Statement, Expression & Indentation</a></li>
+                            <li class="collection-item"><a href="http://www.techbeamers.com/python-data-types-learn-basic-advanced/">Python Data Types – Learn From Basic To Advanced</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div id="test-swipe-5" class="col s6">
+
+                        <ul class="collection">
+                            <li class="collection-item"><a href="https://www.tutorialspoint.com/flask/index.htm">Flask Tutorial</a></li>
+                            <li class="collection-item"><a href="http://flask.pocoo.org/docs/0.12/quickstart/">Flask quickstart</a></li>
+                            <li class="collection-item"><a href="http://flask.pocoo.org/docs/0.12/tutorial/dbcon/">Flask Database Connections</a></li>
+                            <li class="collection-item"><a href="http://flask.pocoo.org/docs/0.12/blueprints/">Flask Modular Applications with Blueprints</a></li>
+                        </ul>
+
+
+                    </div>
+
+
+                </div>
             </div>
-            <div id="test-swipe-2" class="col s6">
-
-                <ul class="browser-default">
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS">Introduction to CSS</a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                </ul>
-
-            </div>
-            <div id="test-swipe-3" class="col s6">
-
-                <ul class="browser-default">
-                    <li><a href="https://javascript.info/">The Modern JavaScript Tutorial</a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                </ul>
-
-            </div>
-            <div id="test-swipe-4" class="col s6">
-
-                <ul class="browser-default">
-                    <li><a href="https://www.learnpython.org/">learnpython.org</a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                </ul>
-
-            </div>
-            <div id="test-swipe-5" class="col s6">
-
-
-                <ul class="browser-default">
-                    <li><a href="https://www.tutorialspoint.com/flask/index.htm">Flask Tutorial</a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                    <li><a href=""> </a></li>
-                </ul>
-
-            </div>
-
-
         </div>
-    </div>
+
 
 
 
